@@ -24,7 +24,7 @@ public class TestGeneradorPrimos {
 		GeneradorPrimos generador = new GeneradorPrimos();
 		List<Integer> expected = Arrays.asList(13,11,7,5,3,2);
 		
-		Assert.assertThat(generador.primos(15), is(expected));
+		Assert.assertThat(generador.inverse(15), is(expected));
 	}	
 
 }

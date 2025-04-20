@@ -2,6 +2,7 @@ package org.formacion.ocp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class GeneradorPrimos {
 
@@ -26,5 +27,9 @@ public class GeneradorPrimos {
 		}
 		
 		return true;
+	}
+	
+	public List<Integer> inverse(int limit) { 
+		return this.primos(limit).stream().sorted((n1, n2) -> n2 - n1).collect(Collectors.toList());
 	}
 }
